@@ -31,3 +31,18 @@
     transform: scaleX(1);
     /*transform-origin: bottom left;*/
 }
+
+#navmenu{
+    background-color: red;
+    text-align: right;
+    color:red;
+}
+
+.navbar-container{
+    background-color: purple;
+    width:90%
+}
+
+.navbar {
+    background-color:green;
+}
