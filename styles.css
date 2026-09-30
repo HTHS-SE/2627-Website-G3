@@ -47,10 +47,7 @@
 
 .navbar {
     background-color:green;
-    display:flex;
-    justify-content: center;
 }
-
-.navbar-brand {
-    background-color: pink;
+.about-team{
+    color:rgb(36, 36, 251);
 }
