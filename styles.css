@@ -33,20 +33,29 @@
 }
 
 #navmenu{
-    background-color: red;
     text-align: right;
     height:100%;
+    display: flex;
+    justify-items: left;
 }
 
 .navbar-container{
-    background-color: purple;
+
     width:90%;
     height:100%;
     
 }
 
+.logo {
+    margin: 0 auto;
+    height: 7vh;
+    
+}
+
 .navbar {
-    background-color:green;
+    background-color:navy;
+    display: flex;
+    justify-content: center;
 }
 .about-team{
     color:rgb(36, 36, 251);
