@@ -35,14 +35,22 @@
 #navmenu{
     background-color: red;
     text-align: right;
-    color:red;
+    height:100%;
 }
 
 .navbar-container{
     background-color: purple;
-    width:90%
+    width:90%;
+    height:100%;
+    
 }
 
 .navbar {
     background-color:green;
+    display:flex;
+    justify-content: center;
+}
+
+.navbar-brand {
+    background-color: pink;
 }
