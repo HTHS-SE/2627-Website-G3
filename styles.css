@@ -53,8 +53,56 @@
 }
 
 .navbar {
-    background-color:navy;
+    background-color:black;
     display: flex;
     justify-content: center;
 }
+<<<<<<< HEAD
 
+=======
+.about-team{
+    color:rgb(36, 36, 251);
+}
+
+
+.banner {
+    background-color:red;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img/banner.jpg");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    height:20vh;
+}
+
+.banner h1 {
+    font-size: 4rem;
+}
+
+.history {
+    display:flex;
+}
+
+.history-content{
+    display:flex;
+    width: 50vw;
+}
+
+.history-content p {
+    font-size: 1.5rem;
+    line-height:2;
+    margin-right:4rem;
+}
+
+.history-images{
+    display:flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.history img {
+    height:20vh;
+}
+>>>>>>> 4843e4766f70c4c6ae7cdfdf61657ac394e6ab6f
