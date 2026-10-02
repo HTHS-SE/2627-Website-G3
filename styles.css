@@ -133,10 +133,7 @@
 .history img {
     height:20vh;
 }
-body {
-    background: #eee;
-    margin-top: 20px;
-}
+
 
 .hori-timeline .events {
     border-top: 3px solid green;
