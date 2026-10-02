@@ -75,7 +75,23 @@
     height:20vh;
 }
 
+.banner1 {
+    background-color:red;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img/banner1.webp");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    height:20vh;
+}
+
 .banner h1 {
+    font-size: 4rem;
+}
+
+.banner1 h1 {
     font-size: 4rem;
 }
 
