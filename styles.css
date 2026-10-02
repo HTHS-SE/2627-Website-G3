@@ -76,22 +76,31 @@
 }
 
 .banner h1 {
-    font-size: 4rem;
+    font-size: 5rem;
+}
+
+.history-header {
+    font-size: 3rem;
+    width:100%;
+    margin-top:3vh;
 }
 
 .history {
     display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .history-content{
     display:flex;
-    width: 50vw;
+    width: 60vw;
+    
 }
 
 .history-content p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     line-height:2;
-    margin-right:4rem;
+    height:auto;
 }
 
 .history-images{
@@ -101,5 +110,13 @@
 }
 
 .history img {
-    height:20vh;
+    height:auto;
+    object-fit: cover;
+    max-height:45vh;
+}
+
+.timeline {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
