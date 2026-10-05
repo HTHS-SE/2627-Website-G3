@@ -179,7 +179,125 @@ body {
     padding: 2px 4px;
 }
 
+.lp-timeline {  /* timeline for the landing page */
+    position: relative;
+    margin: 0 auto;
+    max-width: 1800px;
+}
 
+.lp-timeline::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 10px;
+  background-color: white;
+}
+
+.lp-tl-container { /*landing page timeline container*/
+    padding: 5px 40px;
+    position: relative;
+    width: 50%;
+}
+
+.lp-tl-container::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: -20px;
+  top: 19px;
+  background-color: white;
+  border: 5px solid blue;
+  border-radius: 20%;
+  transform:rotate(45deg);
+  z-index: 1000;
+}
+
+.lp-tl-left {
+  left: 0;
+}
+
+.lp-tl-right{
+  left: 50.32%;
+}
+
+
+.lp-tl-left::before {
+  content: " ";
+  position: absolute;
+  top: 22px;
+  height: 20px;
+  width: 20px;
+  z-index: 1;
+  right: 30px;
+  background-color: white;
+  border: 5px solid white;
+  transform:rotate(45deg);
+  z-index:1;
+}
+
+.lp-tl-right::before {
+  content: " ";
+  position: absolute;
+  top: 22px;
+  height: 20px;
+  width: 20px;
+  z-index: 1;
+  left: 30px;
+  background-color: white;
+  border: 5px solid white;
+  transform:rotate(45deg);
+}
+.lp-tl-right::after{
+    left: -16px;
+}
+
+
+.lp-tl-text {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 10px;
+}
+
+.vh40 {
+    max-height:40vh;
+}
+
+.vh30 {
+    max-height: 30vh;
+}
+
+@media screen and (max-width: 700px) {
+  .lp-timeline::after {
+    left: 24px;
+  }
+  .lp-tl-container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  .lp-tl-container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .lp-tl-left::after{
+    left: 14px;
+  }
+
+  .lp-tl-right::after {
+    left:14px;
+  }
+
+  .lp-tl-right {
+    left:0;
+  }
+}
 @media (min-width: 1140px) {
     .hori-timeline .events 
     .event-list {
