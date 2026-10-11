@@ -1,3 +1,5 @@
+
+/*----------------------------------NAVBAR CSS----------------------------------*/
 .nav-background-color {
     background-color:blue;
 }
@@ -57,6 +59,181 @@
     display: flex;
     justify-content: center;
 }
+/*--------------------------------------------------------------------------------*/
+
+/*----------------------------------HOMEPAGE CSS----------------------------------*/
+
+.lp-hr{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/*----HOMEPAGE GALLERY----*/
+
+.lp-gallery {
+  display:flex;
+  justify-content: center;
+  align-content:center;
+  align-items:center;
+  flex-wrap: wrap;
+}
+
+.lp-gallery-card {
+  width:21vw;
+  margin: 0.7rem;
+  text-align:center;
+  color: black;
+  text-decoration: none;
+  transition: transform 0.5s;
+}
+
+.lp-gallery-card img{
+  width:100%;
+  height:22vh;
+  object-fit: cover;
+  overflow:hidden
+}
+.lp-gallery-card h3{
+  margin-top: 1rem;
+}
+
+.lp-gallery-card:hover{
+  transform:scale(1.1);
+  box-shadow: 10px 10px 30px black;
+  text-decoration: underline;
+  color:navy;
+  z-index:1;
+}
+
+/*----HOMEPAGE TOPICS----*/
+.lp-topics {
+  display:grid;
+  grid-template-columns: repeat(3,1fr); 
+}
+
+.lp-topic-card {
+  overflow:hidden;
+  cursor:pointer;
+  position:relative;
+}
+
+.lp-topic-card img {
+  width:100%;
+  height:500px;
+  object-fit: cover;
+  overflow:hidden;
+}
+
+.lp-tc-text {
+  background-color: rgb(183, 155, 155);
+  padding:1rem;
+  position:absolute;
+  box-sizing:border-box;
+  width:100%;
+  bottom:0px;
+  left:0;
+  color:black;
+  height: 65px;
+  transition:height 1s ease, background-color 1s ease;
+}
+
+.lp-tc-desc{
+  height:0;
+  margin:0;
+  color: black;
+}
+
+.lp-topic-card:hover .lp-tc-text{
+    height:40%;
+    background-color:white;
+}
+
+.lp-tc-button {
+  position:relative;
+  bottom: -70px;
+}
+
+/*----HOMEPAGE EMERGING TECH----*/
+
+.lp-etech-card {
+  display: grid;
+  justify-content: center;
+  overflow:hidden;
+  position:relative;
+  margin-bottom:3rem;
+  
+}
+
+.lp-etech-text{
+  background-image:linear-gradient(to bottom, black, rgba(0,0,0,0.6), transparent);
+  color:white;
+  padding-left:1rem;
+  padding-right:1rem;
+  position:absolute;
+  box-sizing:border-box;
+  width:100%;
+  top:0;
+  color:white;
+  height: 0;
+  transition: height 1s ease, padding 0.5s ease;
+  overflow:hidden;
+}
+
+.lp-etech-text-dark{
+  background-image:linear-gradient(to bottom, black 50%, rgba(0,0,0,0.6), transparent);
+  color:white;
+  padding-left:1rem;
+  padding-right:1rem;
+  position:absolute;
+  box-sizing:border-box;
+  width:100%;
+  top:0;
+  color:white;
+  height: 0;
+  transition: height 1s ease, padding 0.5s ease;
+  overflow:hidden;
+}
+
+
+.lp-etech-desc{
+  height:0;
+  margin:0;
+  color: white;
+}
+
+.lp-etech-card:hover .lp-etech-text{
+  height:20%;
+  padding:1rem;
+}
+
+.lp-etech-card:hover .lp-etech-text-dark{
+  height:30%;
+  padding:1rem;
+}
+
+
+.lp-etech-card video {
+  position:relative;
+  width:100%;
+  object-fit: cover;
+  border-left: 2.5px solid black;
+  border-right: 2.5px solid black;
+  
+}
+
+/*--------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 .about-team{
     color:rgb(36, 36, 251);
@@ -102,49 +279,7 @@
     font-size: 5rem;
 }
 
-.history-header {
-    font-size: 3rem;
-    width:100%;
-    margin-top:3vh;
-}
-
-.banner1 h1 {
-    font-size: 4rem;
-}
-.banner2 h1 {
-    font-size: 4rem;
-}
-
-.history {
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.history-content{
-    display:flex;
-    width: 60vw;
-    
-}
-
-.history-content p {
-    font-size: 1.7rem;
-    line-height:2;
-    height:auto;
-}
-
-.history-images{
-    display:flex;
-    flex-direction: column;
-    justify-content: right;
-}
-
-.history img {
-    height:auto;
-    object-fit: cover;
-    max-height:45vh;
-}
-body {
+.body {
     background: #eee;
     margin-top: 20px;
 }
@@ -177,149 +312,6 @@ body {
     margin: 0 auto;
     border-radius: 4px;
     padding: 2px 4px;
-}
-
-.lp-timeline {  /* timeline for the landing page */
-    position: relative;
-    margin: 0 auto;
-    max-width: 1800px;
-    display:flex;
-    flex-direction: column;
-    justify-content:right;
-}
-
-.lp-timeline::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 10px;
-    background-color: white;
-}
-
-.lp-tl-container { /*landing page timeline container*/
-    padding: 5px 40px;
-    position: relative;
-    width: max-content;
-}
-
-.lp-tl-container::after {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    right: -20px;
-    top: 19px;
-    background-color: white;
-    border: 5px solid blue;
-    border-radius: 20%;
-    transform:rotate(45deg);
-    z-index: 1000;
-}
-
-.lp-tl-left {
-    align-self: flex-end;
-    right:50%
-}
-
-.lp-tl-right{
-    left: 50.32%;
-}
-
-
-.lp-tl-left::before {
-    content: " ";
-    position: absolute;
-    top: 22px;
-    height: 20px;
-    width: 20px;
-    z-index: 1;
-    right: 30px;
-    background-color: white;
-    border: 5px solid white;
-    transform:rotate(45deg);
-    z-index:1;
-}
-
-.lp-tl-right::before {
-    content: " ";
-    position: absolute;
-    top: 22px;
-    height: 20px;
-    width: 20px;
-    z-index: 1;
-    left: 30px;
-    background-color: white;
-    border: 5px solid white;
-    transform:rotate(45deg);
-}
-.lp-tl-right::after{
-    left: -16px;
-}
-
-
-.lp-tl-text {
-    padding: 20px 30px;
-    background-color: white;
-    position: relative;
-    border-radius: 10px;
-}
-
-.vh40 {
-    max-height:40vh;
-}
-
-.vh30 {
-    max-height:30vh;
-}
-
-@media screen and (max-width: 700px) {
-  .lp-timeline::after {
-    left: 24px;
-  }
-  .lp-tl-container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-  }
-  .lp-tl-container::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
-
-  .lp-tl-left::after{
-    left: 14px;
-  }
-
-  .lp-tl-right::after {
-    left:14px;
-  }
-
-  .lp-tl-right {
-    left:0;
-  }
-}
-
-.lp-tl-text {
-    text-align: center;
-}
-
-.hover-dropdown {
-    overflow: hidden;
-    opacity: 0;
-    height:0;
-}
-
-.lp-tl-text:hover .hover-dropdown {
-    height:100%;
-    opacity: 1;
-}
-
-.lp-tl-text:hover{
-    text-align: left;
 }
 
 @media (min-width: 1140px) {
