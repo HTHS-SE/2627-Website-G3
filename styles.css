@@ -62,6 +62,21 @@
 /*--------------------------------------------------------------------------------*/
 
 /*----------------------------------HOMEPAGE CSS----------------------------------*/
+.lp-banner {
+    background-color:red;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img/banner.jpg");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    height:20vh;
+}
+
+.lp-banner h1 {
+    font-size: 5rem;
+}
 
 .lp-hr{
   margin-top: 2rem;
@@ -228,19 +243,7 @@
 .about-team{
     color:rgb(36, 36, 251);
 }
-
-
-.banner {
-    background-color:red;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img/banner.jpg");
-    background-size:cover;
-    background-position:center;
-    color:white;
-    height:20vh;
-}
+/*----------------------------------------------------------------------------------*/
 
 .banner1 {
     background-color:red;
@@ -263,10 +266,6 @@
     background-position:center;
     color:white;
     height:20vh;
-}
-
-.banner h1 {
-    font-size: 5rem;
 }
 
 .body {
@@ -523,3 +522,35 @@
 .ethics-content {
   margin-top: 0;
 }
+
+/*----------------------------------AERODYNAMICS CSS----------------------------------*/
+.aerodynamics-banner {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img/aerodynamics-banner.jpg");
+    background-size:cover;
+    background-position:center 18%;
+    color:white;
+    height:20vh;
+}
+
+.ad-forces {
+  display:flex;
+  justify-content: space-evenly;
+  
+}
+
+.ad-forces-description {
+  max-width:900px;
+  border: solid 3px black;
+  background-color:white;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.ad-forces-description img{
+  width:100%;
+  margin-top:2rem;
+}
+
