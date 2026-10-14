@@ -78,6 +78,18 @@
     font-size: 5rem;
 }
 
+.banner1 h1 { /*Banner Heading*/
+    font-size: 5rem;
+}
+
+.banner2 h1 { /*Banner Heading*/
+    font-size: 5rem;
+}
+
+.aerodynamics-banner h1 { /*Banner Heading*/
+    font-size: 5rem;
+}
+
 .lp-hr{ /*Landing page horizontal rule -- sets vertical margins of 2rem for horizontal linebreaks with this class*/
   margin-top: 2rem;
   margin-bottom: 2rem;
