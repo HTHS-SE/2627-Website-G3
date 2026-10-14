@@ -49,8 +49,8 @@
 }
 
 .logo {
-    margin: 0 auto;
-    height: 7vh;
+    margin: 0 auto; /*horizontally centered within container*/
+    height: 7vh; /*Logo set to scale based on viewheight*/
     
 }
 
@@ -62,66 +62,29 @@
 /*--------------------------------------------------------------------------------*/
 
 /*----------------------------------HOMEPAGE CSS----------------------------------*/
-.lp-banner {
+.lp-banner { /* Landing Page banner */
     background-color:red;
     display:flex;
-    justify-content:center;
-    align-items:center;
-    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img/banner.jpg");
-    background-size:cover;
+    justify-content:center; /*Center text horizontally*/
+    align-items:center;   /*Center text vertically*/
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img/banner.jpg"); /*Apply a 70% brightness filter to linked background image*/
+    background-size:cover; /*Set background to fill space*/
     background-position:center;
     color:white;
-    height:20vh;
+    height:20vh; /*Scale banner based on viewheight*/
 }
 
-.lp-banner h1 {
+.lp-banner h1 { /*Banner Heading*/
     font-size: 5rem;
 }
 
-.lp-hr{
+.lp-hr{ /*Landing page horizontal rule -- sets vertical margins of 2rem for horizontal linebreaks with this class*/
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-/*----HOMEPAGE GALLERY----*/
-
-.lp-gallery {
-  display:flex;
-  justify-content: center;
-  align-content:center;
-  align-items:center;
-  flex-wrap: wrap;
-}
-
-.lp-gallery-card {
-  width:21vw;
-  margin: 0.7rem;
-  text-align:center;
-  color: black;
-  text-decoration: none;
-  transition: transform 0.5s;
-}
-
-.lp-gallery-card img{
-  width:100%;
-  height:22vh;
-  object-fit: cover;
-  overflow:hidden
-}
-.lp-gallery-card h3{
-  margin-top: 1rem;
-}
-
-.lp-gallery-card:hover{
-  transform:scale(1.1);
-  box-shadow: 10px 10px 30px black;
-  text-decoration: underline;
-  color:navy;
-  z-index:1;
-}
-
 /*----HOMEPAGE TOPICS----*/
-.lp-topics {
+.lp-topics { /*Landing Page Topics section -- Grid with three equally spaced columns to contain each of the three cards*/
   display:grid;
   grid-template-columns: repeat(3,1fr); 
 }
@@ -135,21 +98,22 @@
 .lp-topic-card img {
   width:100%;
   height:500px;
+  /*Stretch width to fill 100% of column width, but height is cut off at 500px*/
   object-fit: cover;
-  overflow:hidden;
+  overflow:hidden; /*hide image overflow*/
 }
 
-.lp-tc-text {
+.lp-tc-text { /*Textbox below image*/
   background-color: rgb(183, 155, 155);
   padding:1rem;
-  position:absolute;
+  position:absolute; /*position is set to absolute such that the textbox can overlap the image on hover*/
   box-sizing:border-box;
   width:100%;
-  bottom:0px;
+  bottom:0; /*sets the absolute position of the textbox to the bottom of the image*/ 
   left:0;
   color:black;
-  height: 65px;
-  transition:height 1s ease, background-color 1s ease;
+  height: 65px; /*sets the height of the textbox to 65px such that the labels (Aeronautics, Astronautics, Aerodynamics) show but not the description*/
+  transition:height 1s ease, background-color 1s ease; /*Pop-up transition*/
 }
 
 .lp-tc-desc{
@@ -158,29 +122,87 @@
   color: black;
 }
 
-.lp-topic-card:hover .lp-tc-text{
-    height:40%;
-    background-color:white;
+.lp-topic-card:hover .lp-tc-text{ /*Pop-up transition for textboxes*/
+    height:40%; /*Height goes from 65px to 40% of the grid height over 1s ease transition*/
+    background-color:white; /*Background goes from rgb(183, 155, 155) -- tan colored -- to white over 1s ease transition*/
 }
 
-.lp-tc-button {
-  position:relative;
-  bottom: -70px;
+.lp-tc-button { /*Landing Page Topic Card Button -- the "Go to Page" button that links users to other site pages*/
+  position:relative; /*Position is relative to the *text box* so it follows it during transition*/
+  bottom: -70px; /*Position setting so that it is at the correct relative position*/
 }
+
+/*----HOMEPAGE GALLERY----*/
+
+.lp-gallery { /*Landing Page Gallery for the Applications Section*/
+  display:flex; /*Flexbox with 5 cards*/
+  justify-content: center;
+  align-content:center;
+  align-items:center;
+  flex-wrap: wrap; /*Wrap cards so they display neatly*/
+}
+
+.lp-gallery-card { /*Landing Page Gallery Card*/
+  width:21vw;
+  margin: 0.7rem;
+  text-align:center;
+  color: black;
+  text-decoration: none; /*For underline on hover*/
+  transition: transform 0.5s; /*Pop-up hover transition*/
+}
+
+.lp-gallery-card img{ /*Gallery card images above the text*/
+  width:100%;
+  height:22vh;
+  object-fit: cover;
+  overflow:hidden
+  /*Standard image settings, 100% with limited height to maintain row-height consistency*/
+}
+.lp-gallery-card h3{ /*Gallery text below images*/
+  margin-top: 1rem;
+}
+
+.lp-gallery-card:hover{ /*Pop-up hover transition*/
+  transform:scale(1.1); /*Scale by 1.1x*/
+  box-shadow: 10px 10px 30px black; /*Creates a shadow around the entire gallery card -- 10px 10px x-y offset and 30px blur, black color*/
+  text-decoration: underline; /*Underlines text*/
+  color:navy; /*Changes text color*/
+  z-index:1; /*Sets gallery card to top so that the box shadow doesnt clip under other cards*/
+}
+
 
 /*----HOMEPAGE EMERGING TECH----*/
 
-.lp-etech-card {
+.lp-etech-card { /*Landing Page Emerging Technologies Card*/ 
+  /*Each card has an autoplaying loop video with a text description that drops down from the top on hover*/
   display: grid;
   justify-content: center;
   overflow:hidden;
   position:relative;
   margin-bottom:3rem;
+  /*Standard image settings, 3rem bottom margin for some visual whitespace*/
   
 }
 
-.lp-etech-text{
-  background-image:linear-gradient(to bottom, black, rgba(0,0,0,0.6), transparent);
+.lp-etech-text{ /*Landing Page Emerging Technologies Text (at the top of each card).*/
+  background-image:linear-gradient(to bottom, black, rgba(0,0,0,0.6), transparent); 
+  /*A gradient from black (top) to transparent (bottom). Keep in mind that the text is being overlayed on top of the video*/
+  color:white;
+  padding-left:1rem; /*Note that there is zero vertical padding. This is so that the textbox is completely hidden at height:0 instead of showing some padding.*/
+  /*Vertical padding will be readded on hover transition*/
+  padding-right:1rem;
+  position:absolute; /*Absolute positioning to allow textbox to be overlayed above the video*/
+  box-sizing:border-box;
+  width:100%;
+  top:0;
+  color:white;
+  height: 0; /*Start with height 0 (allowing for transition) so it is completely hidden when the video is not hovered on*/
+  transition: height 1s ease, padding 0.5s ease;
+  overflow:hidden;
+}
+
+.lp-etech-text-dark{ /*Custom text-box CSS for a certain video that needed a darker background gradient*/
+  background-image:linear-gradient(to bottom, black 50%, rgba(0,0,0,0.6), transparent); /*darker background gradient, the only change from original CSS*/
   color:white;
   padding-left:1rem;
   padding-right:1rem;
@@ -194,45 +216,32 @@
   overflow:hidden;
 }
 
-.lp-etech-text-dark{
-  background-image:linear-gradient(to bottom, black 50%, rgba(0,0,0,0.6), transparent);
-  color:white;
-  padding-left:1rem;
-  padding-right:1rem;
-  position:absolute;
-  box-sizing:border-box;
-  width:100%;
-  top:0;
-  color:white;
-  height: 0;
-  transition: height 1s ease, padding 0.5s ease;
-  overflow:hidden;
-}
 
-
-.lp-etech-desc{
+.lp-etech-desc{ /*Nested within the textbox, separates the description from the heading*/
   height:0;
   margin:0;
   color: white;
 }
 
-.lp-etech-card:hover .lp-etech-text{
-  height:20%;
+.lp-etech-card:hover .lp-etech-text{ /*Dropdown transition for textbox*/
+  height:20%; /*Transitions height from 0 to 20% of grid column height over 1s ease transition*/
+  padding:1rem;/*Vertical padding readded on hover*/
+}
+
+.lp-etech-card:hover .lp-etech-text-dark{ /*Custom text-box CSS for a certain video that needed a darker background gradient*/
+  height:30%; /*Increased height of the text-box on hover, the only change from original CSS*/
   padding:1rem;
 }
 
-.lp-etech-card:hover .lp-etech-text-dark{
-  height:30%;
-  padding:1rem;
-}
 
-
-.lp-etech-card video {
+.lp-etech-card video { /*Videos on the background of each landing page emerging technologies card*/
   position:relative;
   width:100%;
   object-fit: cover;
+  /*Fills width of the grid container -- overflow height is cut off*/
   border-left: 2.5px solid black;
   border-right: 2.5px solid black;
+  /*Borders*/
   
 }
 
@@ -524,33 +533,35 @@
 }
 
 /*----------------------------------AERODYNAMICS CSS----------------------------------*/
-.aerodynamics-banner {
+.aerodynamics-banner { /*Aerodynamics page banner, similar settings as other pages*/
     display:flex;
     justify-content:center;
     align-items:center;
-    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img/aerodynamics-banner.jpg");
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img/aerodynamics-banner.jpg"); /*Apply a 70% brightness filter to linked background image*/
     background-size:cover;
-    background-position:center 18%;
+    background-position:center 18%; /*Adjusting position so that the subject of the image is visible*/
     color:white;
     height:20vh;
 }
 
-.ad-forces {
+.ad-forces { /*Aerodynamics Forces section*/
+  /*Flexbox with four cards*/
   display:flex;
-  justify-content: space-evenly;
+  justify-content: space-evenly; /*Cards are spaced evenly along the width of the container*/
   
 }
 
-.ad-forces-description {
-  max-width:900px;
+.ad-forces-description { /*Aerodynamics Forces Descriptions*/
+  max-width:900px; /*Sets a max width to maintain width-consistency across cards*/
   border: solid 3px black;
   background-color:white;
   flex-wrap:wrap;
   justify-content:center;
 }
 
-.ad-forces-description img{
+.ad-forces-description img{ /*Images for Aerodynamics Forces cards*/
   width:100%;
   margin-top:2rem;
 }
 
+/*------------------------------------------------------------------------------------------*/

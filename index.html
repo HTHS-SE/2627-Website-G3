@@ -59,14 +59,14 @@
         <h1>Aerospace Engineering</h1>
     </section>
 
-    <section class="overview text-dark p-2 text-left" style="margin-top:2rem"> <!-- Overview-->
+    <section class="overview text-dark p-2 text-left" style="margin-top:2rem"> <!-- Overview with a 2 rem margin from the banner-->
         
         <div class="container">
             <!-------------------------------------What is Aerospace Engineering?------------------------------------->
             <section class="row">
-                <div class="col-lg-7 col-md-6 col-12 p-3">
-                    <h1 class="auto-padding text-left" style="margin-bottom:2rem;"> <strong> What is Aerospace Engineering? </strong> </h1>
-                    <p style="font-size: 23px; line-height:1.75;">
+                <div class="col-lg-7 col-md-6 col-12 p-3"> <!--col-lg-7 -- 7/12 columns left side-->
+                    <h1 class="auto-padding text-left" style="margin-bottom:2rem;"> <strong> What is Aerospace Engineering? </strong> </h1> <!--Heading for overview-->
+                    <p style="font-size: 23px; line-height:1.75;">                                                                          <!--Description for overview-->
                         Aerospace engineering is the design, development, testing, and production of aircraft. Its two branches include
                         aeronautical engineering, which involves aircraft within the Earth's atmosphere, as well as astronautical engineering,
                         which involves aircraft in outer space. It uses physics, mathematics, and materials science to engineer solutions for
@@ -74,11 +74,11 @@
 
                     </p>
                 </div>
-                <div class="col-lg-5 col-12 p-3">
-                    <img src="img/aerospace-engineering.jpg" alt="Aerospace Engineering" class="card-img-top">
+                <div class="col-lg-5 col-12 p-3"> <!--col-lg-5 -- 5/12 columns right side-->
+                    <img src="img/aerospace-engineering.jpg" alt="Aerospace Engineering" class="card-img-top"> <!--Image card for overview-->
                 </div>
             </section>
-            <div class="col-sm-12 p-1">
+            <div class="col-sm-12 p-1"> <!--Horizontal rule. Separates banner from Topics section. lp-hr sets vertical margins to 2rem for additional whitespace-->
                 <hr class="border-5 opacity-100 lp-hr">
             </div>
 
@@ -90,16 +90,17 @@
                     <!-- overview-left-padding-->
                 </div>
             </div>
-            <section class="lp-topics col-md-12">
-                <div class="lp-topic-card">
-                    <img src="img/topic-aeronautics.jpg" style="object-position:30%">
+            <section class="lp-topics col-md-12"> <!--class 'lp-topics' stands for landing-page topics-->
+                <!--Cards are designed with image on top and textbox on bottom-->
+                <div class="lp-topic-card"> <!--Card 1: Aeronautics-->
+                    <img src="img/topic-aeronautics.jpg" style="object-position:30%"> <!--object position change to get image subject into frame-->
                     <div class="lp-tc-text">
                         <h2><strong>Aeronautics</strong></h2>
                         <p class="lp-tc-desc">The study and design of aircraft <strong>within</strong> Earth's atmosphere</p>
-                        <a href="aeronautics.html" class="lp-tc-button btn btn-success btn-sm">Go to Page</a>
+                        <a href="aeronautics.html" class="lp-tc-button btn btn-success btn-sm">Go to Page</a> <!--Bootstrap default button. Links to site pages-->
                     </div>
                 </div>
-                <div class="lp-topic-card">
+                <div class="lp-topic-card"> <!--Card 2: Astronautics-->
                     <img src="img/topic-astronautics.jpg">
                     <div class="lp-tc-text">
                         <h2><strong>Astronautics</strong></h2>
@@ -107,7 +108,7 @@
                         <a href="astronautics.html" class="lp-tc-button btn btn-success btn-sm">Go to Page</a>
                     </div>
                 </div>
-                <div class="lp-topic-card">
+                <div class="lp-topic-card"> <!--Card 3: Aerodynamics-->
                     <img src="img/topic-aerodynamics.jpg" style="object-position: 100%;">
                     <div class="lp-tc-text">
                         <h2><strong>Aerodynamics</strong></h2>
@@ -117,64 +118,69 @@
                 </div>
             </section>
 
-            <div class="col-sm-12 p-1">
+            <div class="col-sm-12 p-1"> <!--Horizontal rule. Separates Topics and Applications sections.-->
                 <hr class="border-5 opacity-100 lp-hr">
             </div>
 
 
             <!-------------------------------------Applications------------------------------------->
-             <h1 class="auto-padding text-center"> <strong> Applications </strong> </h1>
-            <section class="lp-gallery">
-                <a href="https://www.airlines-inform.com/commercial-aircraft/" target="_blank" class="lp-gallery-card">
+             <h1 class="auto-padding text-center"> <strong> Applications </strong> </h1> <!--Applications heading-->
+            <section class="lp-gallery"> <!--Gallery with flexbox display. Gallery contains five cards. Each card has an image and a description below it.-->
+                <!--All cards are links to related sites. _blank creates new tab on click-->
+                <a href="https://www.airlines-inform.com/commercial-aircraft/" target="_blank" class="lp-gallery-card">  <!--Commercial Aircraft Card-->
                     <img src="img/commercial-aircraft.jpg" alt="Commercial aircraft">
                     <h3>Commercial Aircraft</h3>
                     <p>Aircraft designed to transport commercial passengers around the world.</p>
                 </a>
-                <a href="https://www.britannica.com/technology/military-aircraft" target="_blank" class="lp-gallery-card">
+                <a href="https://www.britannica.com/technology/military-aircraft" target="_blank" class="lp-gallery-card"> <!--Military Aircraft Card-->
                     <img src="img/military-aircraft.jpg" alt="Military aircraft">
                     <h3>Military Aircraft</h3>
                     <p>Aircraft designed for military defense and aerial operations</p>
                 </a>
-                <a href="https://www.nasa.gov/humans-in-space/spaceships-and-rockets/" target="_blank" class="lp-gallery-card">
+                <a href="https://www.nasa.gov/humans-in-space/spaceships-and-rockets/" target="_blank" class="lp-gallery-card"> <!--Rockets Card-->
                     <img src="img/rocket-aircraft.jpg" alt="Rocket aircraft">
                     <h3>Rockets</h3>
                     <p>Aircraft designed use thrust from rocket engines to propel quickly into the air</p>
                 </a>
-                <a href="https://www.nasa.gov/general/what-is-a-satellite/" target="_blank" class="lp-gallery-card">
+                <a href="https://www.nasa.gov/general/what-is-a-satellite/" target="_blank" class="lp-gallery-card"> <!--Satellites Card-->
                     <img src="img/satellite-aircraft.jpg" alt="Commercial aircraft">
                     <h3>Satellites</h3>
                     <p>Aircraft designed to be launched into space and maintain orbit.</p>
                 </a>
-                <a href="https://www.nasa.gov/reference/jsc-rovers/" target="_blank" class="lp-gallery-card">
+                <a href="https://www.nasa.gov/reference/jsc-rovers/" target="_blank" class="lp-gallery-card"> <!--Rovers Card-->
                     <img src="img/rover-aircraft.jpg" alt="Commercial aircraft">
                     <h3>Rovers</h3>
                     <p>Robots designed to be launched into other planets, moons, etc. to aid in exploration</p>
                 </a>
             </section>
-            <div class="col-sm-12 p-1">
+            <div class="col-sm-12 p-1"> <!--Horizontal rule. Separates Applications and Emerging Technologies sections.-->
                 <hr class="border-5 opacity-100 lp-hr">
             </div>
 
 
             <!-------------------------------------Emerging Technologies------------------------------------->
-            <div class="row">
+            <div class="row"> <!--Emerging Technologies Heading-->
                 <div class="col-sm-12 p-3">
                     <h1 class="auto-padding text-center"> <strong>Emerging Technologies</strong> </h1>
                     <!-- overview-left-padding-->
                 </div>
             </div>
-            <div class="lp-etech-card">
+            <!--This section has three (comparatively) large cards. A card takes up the entire row.-->
+            <!--Each card has a video with 100% width (of container) set to looped autoplay and muted.-->
+            <!--A text description will drop-down from the top of the video on hover.-->
+            <!--lp-etech = landing-page emerging technologies-->
+            <div class="lp-etech-card">  <!--Card 1: JETZERO-->
                 <video autoplay loop muted>
                     <source src="img/jetzero.mp4" type="video/mp4">
                 </video>
-                <div class="lp-etech-text">
+                <div class="lp-etech-text"> <!--Each text div holds a header and a paragraph description-->
                         <h2><strong>JETZERO</strong></h2>
                         <p class="lp-etech-desc">A 250-passenger commercial airliner being developed to use up to maximize efficiency and use 50% less fuel than current planes. 
                             <br>For more information, visit <a href="https://www.jetzero.aero/" style="color:cyan;">JetZero.</a></p>
                     </div>
             </div>
 
-            <div class="lp-etech-card">
+            <div class="lp-etech-card"> <!--Card 2: NASA X-59 QUESST-->
                 <video autoplay loop muted>
                     <source src="img/quesst.mp4#t=28" type="video/mp4">
                 </video>
@@ -186,7 +192,7 @@
                 </div>
             </div>
 
-            <div class="lp-etech-card">
+            <div class="lp-etech-card"> <!--Card 3: DARPA X-65-->
                 <video autoplay loop muted>
                     <source src="img/x-65.mp4#t=6" type="video/mp4">
                 </video>
