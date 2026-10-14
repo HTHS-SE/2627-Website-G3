@@ -2,9 +2,12 @@
 <html lang="en">
 
 <head>
+    <!--Sets encoding for text/symbols-->
     <meta charset="UTF-8">
+    <!--Scaling properties-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aerospace Engineering Website</title>
+    <!--Title/imports boostrap for css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
@@ -18,7 +21,7 @@
 
 <body class="body gray">
     <header>
-        <!-- Navbar -->
+        <!-- Navbar using boostrap for a responsive layout -->
         <nav class="navbar navbar-expand-lg nav-background-color" data-bs-theme="dark">
             <div class="navbar-container">
 
@@ -52,14 +55,15 @@
             </div>
         </nav>
     </header>
-
+    <!--Main astronautics banner at the top of the page-->
 
     <section class="banner1"> <!--banner-->
         <h1>Astronautics</h1>
     </section>
-
+    <!--Main content section with custom Bootstrap padding/dark text for a clean sharp look-->
     <section class="overview text-dark p-2 text-left"> <!-- Overview-->
         <div class="container">
+            <!--Declares that two headings will share a row-->
             <div class="row">
                 <div class="col-sm-6 p-3">
                     <h1 class="auto-padding text-center"> <strong> What is Astronautics? </strong> </h1>
@@ -70,8 +74,10 @@
                     <!-- overview-left-padding-->
                 </div>
             </div>
+            <!--Introduction into the subfield of astronautics with bullet points, photos, and a venn diagram-->
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-12 p-3">
+                    <!--Bulleted description in an unordered list-->
                     <ul style="font-size: 23px;">
                         <li>
                             Astronautics is the science and technology behind
@@ -94,7 +100,8 @@
                     <img src="img/venn.png" alt="Venn Diagram" class="card-img-top">
                 </div>
             </div>
-            
+            <!--Timeline highlighting major milestones in the field of astronautics/space exploration-->
+            <!--Images also included-->
             <h1 class="auto-padding text-center"> <strong> Major Milestones </strong> </h1>
             <div class="row">
                 <div class="col-sm-4 p-3">
@@ -141,6 +148,8 @@
                     </div>
                 </div>
             </div>
+            <!--Using custom bootstrap css grid where there are 3 boxes evenly spaced apart-->
+            <!--Three equal bootstrap columns displaying pioneer portraits, introducing influential scientists/engineers-->
             <div class="row">
                 <div class="col-sm-12 p-3">
                     <h1 class="auto-padding text-center"> <strong> Pioneers of Astronautics </strong> </h1>
@@ -158,6 +167,7 @@
                     <img src="img/oberth.jpg" alt="Oberth" class="card-img-top">
                 </div>
             </div>
+            <!--Custom CSS dropdown menus for each person-->
             <div class="row">
                 <div class="col-sm-4 p-2">
                     <div class="dropdown">
@@ -199,6 +209,8 @@
                     </div>
                 </div>
             </div>
+            <!--Creates another grid with three columns about ethical concerns raised by space exploration-->
+            <!--Consists of each column having a picture and text description-->
             <div class="row">
                 <div class="col-sm-12 p-3">
                     <h1 class="auto-padding text-center"> <strong> Ethics on Astronautics </strong> </h1>
@@ -262,7 +274,7 @@
 
     </section>
 
-    <!-- Footer-->
+    <!-- Footer with custom copyright and back-to-top icon-->
     <footer class="p-5 footer text-dark text-center position-relative">
         <div class="container">
             <p class="lead"> Copyright &copy; SE 2026 Website Aerospace Project </p>
