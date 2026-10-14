@@ -74,19 +74,7 @@
     height:20vh; /*Scale banner based on viewheight*/
 }
 
-.lp-banner h1 { /*Banner Heading*/
-    font-size: 5rem;
-}
-
-.banner1 h1 { /*Banner Heading*/
-    font-size: 5rem;
-}
-
-.banner2 h1 { /*Banner Heading*/
-    font-size: 5rem;
-}
-
-.aerodynamics-banner h1 { /*Banner Heading*/
+.lp-banner h1 { /*Landing Page Banner Heading*/
     font-size: 5rem;
 }
 
@@ -277,6 +265,11 @@
     color:white;
     height:20vh;
 }
+
+.banner1 h1 { /*Aeronautics Heading*/
+    font-size: 5rem;
+}
+
 .banner2 {
     background-color:red;
     display:flex;
@@ -287,6 +280,9 @@
     background-position:center;
     color:white;
     height:20vh;
+}
+.banner2 h1 { /*Astronautics Banner Heading*/
+    font-size: 5rem;
 }
 
 .body {
@@ -554,6 +550,10 @@
     background-position:center 18%; /*Adjusting position so that the subject of the image is visible*/
     color:white;
     height:20vh;
+}
+
+.aerodynamics-banner h1 { /*Aerodynamics Banner Heading*/
+    font-size: 5rem;
 }
 
 .ad-forces { /*Aerodynamics Forces section*/
