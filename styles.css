@@ -1,4 +1,17 @@
 
+
+.container {
+  background-color:#eee;
+}
+
+.footer {
+  background-color: black;
+}
+
+.footer div {
+  color:white;
+}
+
 /*----------------------------------NAVBAR CSS----------------------------------*/
 .nav-background-color {
     background-color:blue;
@@ -62,6 +75,7 @@
 /*--------------------------------------------------------------------------------*/
 
 /*----------------------------------HOMEPAGE CSS----------------------------------*/
+
 .lp-banner { /* Landing Page banner */
     background-color:red;
     display:flex;
@@ -294,6 +308,7 @@
     color:white;
     padding-left:1rem;
     padding-right:1rem;
+    margin-bottom:2rem; /*whitespace at bottom*/
     position:relative;
     box-sizing:border-box;
     width:100%;
@@ -359,8 +374,7 @@
 }
 
 .body {
-    background: #eee;
-    margin-top: 20px;
+    background: slategray;
 }
 
 .hori-timeline .events {
