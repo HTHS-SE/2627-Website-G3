@@ -50,16 +50,17 @@
 #navmenu{
     text-align: right;
     height:100%;
-    display: flex;
-    justify-items: left;
 }
 
 .navbar-container{
-
+    justify-content: space-between;
     width:90%;
     height:100%;
-    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
+
 
 .logo {
     margin: 0 auto; /*horizontally centered within container*/
@@ -72,6 +73,10 @@
     display: flex;
     justify-content: center;
 }
+
+#navmenu .navbar-nav {
+    text-align: right;
+}
 /*--------------------------------------------------------------------------------*/
 
 /*----------------------------------HOMEPAGE CSS----------------------------------*/
@@ -79,6 +84,7 @@
 .lp-banner { /* Landing Page banner */
     background-color:red;
     display:flex;
+    text-align: center;
     justify-content:center; /*Center text horizontally*/
     align-items:center;   /*Center text vertically*/
     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img/banner.jpg"); /*Apply a 70% brightness filter to linked background image*/
@@ -295,8 +301,7 @@
     box-sizing:border-box;
     width:100%;
     color:white;
-    height: 13vh; /*Start with height 0 (allowing for transition) so it is completely hidden when the video is not hovered on*/
-    transition: height 1s ease, padding 0.5s ease;
+    height: 180px; /*Constant height at custom screen size*/
     overflow:hidden;
     font-size: 0.8rem;
     padding:1rem;
@@ -314,20 +319,19 @@
     width:100%;
     color:white;
     height: 30%;
-    transition: height 1s ease, padding 0.5s ease;
     overflow:hidden;
     font-size: 0.9rem;
     padding:1rem;
-    height: 13vh;
+    height: 160px; /*Constant height at custom screen size*/
     transition:none;
   }
 
   .lp-etech-card:hover .lp-etech-text{ /*Dropdown transition for textbox*/
-    height: 13vh; /*Remove hover transition*/
+    height: 180px; /*Remove hover transition*/
   }
 
   .lp-etech-card:hover .lp-etech-text-dark{ /*Custom text-box CSS for a certain video that needed a darker background gradient*/
-    height: 13vh; /*Remove hover transition*/
+    height: 160px; /*Remove hover transition*/
   }
 
     
